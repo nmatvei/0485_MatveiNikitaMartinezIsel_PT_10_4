@@ -1,11 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany._matveinikitamartinezisel_pt_10_4;
 
 /**
- *
+ * Subclasse Roba de la classe Producte
  * @author dam1
  */
 public class Roba extends Producte {
@@ -14,7 +10,9 @@ public class Roba extends Producte {
     }
     
     
-    public double calcularPreuTotal() {
-        return preu * 1.20; // 20% de recàrrec
+    @Override
+    public double calcularPreu(){
+        double preuTotal = this.preu * 1.20;
+        return preuTotal;
     }
 }

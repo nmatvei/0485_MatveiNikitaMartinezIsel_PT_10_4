@@ -11,7 +11,17 @@ abstract class Producte {
     protected String nom; 
     protected double preu;
     
-    public Producte(int id, String nom, double preu) {
+    /**
+     * Constrcutor de la classe
+     * 
+     * @param id
+     * @param nom
+     * @param preu 
+     */
+    public Producte(int id, String nom, double preu) throws Exception{
+        if (id <= 0 || preu <= 0){
+            throw new Exception ("ERROR: S'han introduït dades erronies");
+        }
         this.id = id;
         this.nom = nom;
         this.preu = preu;
@@ -45,8 +55,13 @@ abstract class Producte {
      * Mètode SET per canviar l'id
      * @param id 
      */
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int id) throws Exception{
+        if (id <= 0){
+            System.out.println("ERROR: S'ha introduït un preu invàlid");
+        }
+        else{
+            this.id = id;
+        }
     }
     
     /**
@@ -61,12 +76,17 @@ abstract class Producte {
      * Mètode SET per canviar el preu
      * @param preu 
      */
-    public void setPreu(double preu) {
-        this.preu = preu;
+    public void setPreu(double preu){
+        if (preu <= 0){
+            System.out.println("ERROR: S'ha introduït un preu invàlida");
+        }
+        else {
+            this.preu = preu;
+        }
     }
     
     /**
      * Mètode abstracte calcularPreu
      */
-    public abstract void calcularPreu();
+    public abstract double calcularPreu();
 }
