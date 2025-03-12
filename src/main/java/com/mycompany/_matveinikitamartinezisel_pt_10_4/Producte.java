@@ -11,6 +11,8 @@ abstract class Producte {
     protected String nom; 
     protected double preu;
     
+    
+    
     /**
      * Mètode GET que retorna l'id
      * @return id

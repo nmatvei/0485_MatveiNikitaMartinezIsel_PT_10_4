@@ -6,8 +6,8 @@ package com.mycompany._matveinikitamartinezisel_pt_10_4;
 
 /**
  *
- * @author nikit
+ * @author dam1
  */
-public class Llibre extends Producte {
+public class Electronica extends Producte{
     
 }
