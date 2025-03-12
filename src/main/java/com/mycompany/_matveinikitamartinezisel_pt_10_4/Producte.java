@@ -17,6 +17,7 @@ abstract class Producte {
      * @param id
      * @param nom
      * @param preu 
+     * @throws Exception
      */
     public Producte(int id, String nom, double preu) throws Exception{
         if (id <= 0 || preu <= 0){
