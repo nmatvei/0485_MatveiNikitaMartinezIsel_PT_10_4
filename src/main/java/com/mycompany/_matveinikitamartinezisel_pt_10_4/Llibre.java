@@ -9,5 +9,12 @@ package com.mycompany._matveinikitamartinezisel_pt_10_4;
  * @author nikit
  */
 public class Llibre extends Producte {
+     public Llibre(int id, String nom, double preu) {
+        super(id, nom, preu);
+    }
     
+    
+    public double calcularPreuTotal() {
+        return preu * 1.10; // 10% d'impostos
+    }
 }

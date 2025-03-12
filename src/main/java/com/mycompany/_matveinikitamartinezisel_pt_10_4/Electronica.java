@@ -9,5 +9,13 @@ package com.mycompany._matveinikitamartinezisel_pt_10_4;
  * @author dam1
  */
 public class Electronica extends Producte{
+    public Electronica(int id, String nom, double preu) {
+        super(id, nom, preu);
+    }
+    
+    
+    public double calcularPreuTotal() {
+        return preu * 1.15; // 15% d'impostos
+    }
     
 }

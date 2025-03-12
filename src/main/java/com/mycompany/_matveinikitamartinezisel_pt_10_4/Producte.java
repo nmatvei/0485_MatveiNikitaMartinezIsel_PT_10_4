@@ -11,7 +11,11 @@ abstract class Producte {
     protected String nom; 
     protected double preu;
     
-    
+    public Producte(int id, String nom, double preu) {
+        this.id = id;
+        this.nom = nom;
+        this.preu = preu;
+    }
     
     /**
      * Mètode GET que retorna l'id

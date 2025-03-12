@@ -9,5 +9,12 @@ package com.mycompany._matveinikitamartinezisel_pt_10_4;
  * @author dam1
  */
 public class Roba extends Producte {
+    public Roba(int id, String nom, double preu) {
+        super(id, nom, preu);
+    }
     
+    
+    public double calcularPreuTotal() {
+        return preu * 1.20; // 20% de recàrrec
+    }
 }
