@@ -35,5 +35,4 @@ public class Electronica extends Producte {
         /*Retornem el preu calculat*/
         return preuTotal;
     }
-
 }

@@ -26,20 +26,20 @@ public class Camiseta extends Roba{
     }
     
     /**
-     * Mètode GET per conseguir el color
+     * Mètode GET per conseguir la talla
      * 
-     * @return color
+     * @return talla
      */
-    public String getColor() {
-        return color;
+    public String getTalla() {
+        return talla;
     }
     
     /**
-     * Mètode GET per conseguir el material
+     * Mètode SET per canviar la talla
      * 
-     * @return material
+     * @param talla 
      */
-    public String getMaterial() {
-        return material;
+    public void setTalla(String talla) {
+        this.talla = talla;
     }
 }
