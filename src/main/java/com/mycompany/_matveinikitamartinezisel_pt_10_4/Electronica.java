@@ -22,13 +22,13 @@ public class Electronica extends Producte {
     }
 
     /**
-     * Mètode sobrescrit calcularPreu, heredat de la superclasse Producte, que
-     * agrega un impost del 15% al preu.
+     * Mètode sobrescrit calcularPreuTotal, heredat de la superclasse Producte, 
+     * que agrega un impost del 15% al preu.
      *
      * @return preuTotal
      */
     @Override
-    public double calcularPreu() {
+    public double calcularPreuTotal() {
         /*Declarem la variable on amplicarem el impost del 15%*/
         double preuTotal = this.preu * IMPOST_ELECTRONICA;
         

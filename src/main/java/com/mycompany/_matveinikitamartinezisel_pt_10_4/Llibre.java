@@ -22,13 +22,13 @@ public class Llibre extends Producte {
     }
 
     /**
-     * Mètode sobrescrit calcularPreu, heredat de la superclasse Producte, que
-     * agrega un impost del 10% al preu.
+     * Mètode sobrescrit calcularPreuTotal, heredat de la superclasse Producte, 
+     * que agrega un impost del 10% al preu.
      *
      * @return preuTotal
      */
     @Override
-    public double calcularPreu() {
+    public double calcularPreuTotal() {
         /*Declarem la variable on amplicarem el impost del 10%*/
         double preuTotal = this.preu * IMPOST_LLIBRE;
 

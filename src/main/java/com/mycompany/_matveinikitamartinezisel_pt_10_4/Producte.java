@@ -87,7 +87,7 @@ abstract class Producte {
     }
     
     /**
-     * Mètode abstracte calcularPreu
+     * Mètode abstracte calcularPreuTotal
      */
-    public abstract double calcularPreu();
+    public abstract double calcularPreuTotal();
 }
